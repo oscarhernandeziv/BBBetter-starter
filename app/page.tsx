@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Github, Terminal } from "lucide-react";
 import Link from "next/link";
 
@@ -52,18 +53,19 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="flex gap-4">
-							<Link
-								href="#docs"
-								className="inline-flex h-10 items-center justify-center bg-green-500 px-8 font-medium text-black text-sm transition-colors hover:bg-green-400"
+							<Button
+								asChild
+								className="h-10 bg-green-500 px-8 font-medium text-black text-sm transition-colors hover:bg-green-400"
 							>
-								Get Started
-							</Link>
-							<Link
-								href="https://github.com"
-								className="inline-flex h-10 items-center justify-center border border-white/20 px-8 font-medium text-sm transition-colors hover:bg-white/10"
+								<Link href="#docs">Get Started</Link>
+							</Button>
+							<Button
+								asChild
+								variant="outline"
+								className="h-10 border border-white/20 px-8 font-medium text-sm transition-colors hover:bg-white/10"
 							>
-								View on GitHub
-							</Link>
+								<Link href="https://github.com">View on GitHub</Link>
+							</Button>
 						</div>
 					</div>
 					<div className="terminal">

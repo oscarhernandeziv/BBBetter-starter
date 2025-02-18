@@ -70,3 +70,15 @@ body {
 		@apply bg-background text-foreground;
 	}
 }
+
+.terminal {
+  @apply font-mono bg-black/95 text-green-500 p-4 rounded-lg border border-green-500/20;
+}
+
+.terminal-header {
+  @apply flex items-center gap-2 pb-2 border-b border-green-500/20 mb-4;
+}
+
+.terminal-dot {
+  @apply w-3 h-3 rounded-full;
+}

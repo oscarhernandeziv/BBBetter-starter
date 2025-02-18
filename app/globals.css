@@ -104,13 +104,13 @@
 }
 
 .terminal {
-  @apply bg-black/95 text-green-500 p-4 border border-green-500/20;
+	@apply bg-black/95 text-green-500 p-4 border border-green-500/20;
 }
 
 .terminal-header {
-  @apply flex items-center gap-2 pb-2 border-b border-green-500/20 mb-4;
+	@apply flex items-center gap-2 pb-2 border-b border-green-500/20 mb-4;
 }
 
 .terminal-dot {
-  @apply w-3 h-3 rounded-full;
+	@apply w-3 h-3 rounded-full;
 }

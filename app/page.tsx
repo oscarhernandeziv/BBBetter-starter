@@ -54,13 +54,13 @@ export default function Home() {
 						<div className="flex gap-4">
 							<Link
 								href="#docs"
-								className="inline-flex h-10 items-center justify-center rounded-md bg-green-500 px-8 font-medium text-black text-sm transition-colors hover:bg-green-400"
+								className="inline-flex h-10 items-center justify-center bg-green-500 px-8 font-medium text-black text-sm transition-colors hover:bg-green-400"
 							>
 								Get Started
 							</Link>
 							<Link
 								href="https://github.com"
-								className="inline-flex h-10 items-center justify-center rounded-md border border-white/20 px-8 font-medium text-sm transition-colors hover:bg-white/10"
+								className="inline-flex h-10 items-center justify-center border border-white/20 px-8 font-medium text-sm transition-colors hover:bg-white/10"
 							>
 								View on GitHub
 							</Link>

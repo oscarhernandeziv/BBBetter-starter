@@ -1,4 +1,4 @@
-This is a [Next.js 15](https://nextjs.org) starter kit for 2025, using [Bun](https://bun.sh), [Biome](https://biomejs.dev), and [Better Auth](https://better-auth.com). Hence, B.B.B.-etter Starter.
+This is a [Next.js 15](https://nextjs.org) starter kit for 2025, using [Bun](https://bun.sh), [Biome](https://biomejs.dev), and [Better Auth](https://better-auth.com). Hence, (BBB)etter Starter.
 
 ## Features
 
@@ -16,7 +16,7 @@ This is a [Next.js 15](https://nextjs.org) starter kit for 2025, using [Bun](htt
 ## Get Started
 
 ```bash
-git clone this-repo your-app-name
+git clone https://github.com/oscarhernandeziv/better-starter.git your-app-name
 cd your-app-name
 bun install
 ```

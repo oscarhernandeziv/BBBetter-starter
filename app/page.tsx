@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/_components/ui/button";
 import { Github, Terminal } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className="flex min-h-screen flex-col font-[family-name:var(--font-geist-mono)]">
+		<div className="flex min-h-screen flex-col">
 			<header className="border-white/10 border-b">
 				<nav className="container mx-auto flex h-14 items-center justify-between px-4">
 					<div className="flex items-center gap-2">
@@ -46,7 +46,7 @@ export default function Home() {
 					<div className="space-y-6">
 						<div className="space-y-2">
 							<h1 className="font-bold text-4xl tracking-tighter">
-								Bleeding Edge Next.js 15 Starter
+								Bleeding Edge Next.js Starter
 							</h1>
 							<p className="text-muted-foreground">
 								Get up to speed with Bun, Biome, and Better Auth.
@@ -55,14 +55,14 @@ export default function Home() {
 						<div className="flex gap-4">
 							<Button
 								asChild
-								className="h-10 bg-green-500 px-8 font-medium text-black text-sm transition-colors hover:bg-green-400"
+								className="h-10 bg-green-500 px-8 font-bold text-black text-sm transition-colors hover:bg-green-400"
 							>
 								<Link href="#docs">Get Started</Link>
 							</Button>
 							<Button
 								asChild
 								variant="outline"
-								className="h-10 border border-white/20 px-8 font-medium text-sm transition-colors hover:bg-white/10"
+								className="h-10 border border-white/20 px-8 font-bold text-sm transition-colors hover:bg-white/10"
 							>
 								<Link href="https://github.com">View on GitHub</Link>
 							</Button>

@@ -4,8 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-	--font-mono: var(--font-geist-mono);
+@font-face {
+	font-family: "Server Mono";
+	src: url("../public/fonts/ServerMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Server Mono Italic";
+	src: url("../public/fonts/ServerMono-Regular-Italic.woff2") format("woff2");
 }
 
 :root {
@@ -92,6 +98,11 @@
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
+}
+
+@theme {
+	--font-server-mono: "Server Mono", monospace;
+	--font-server-mono-italic: "Server Mono Italic", monospace;
 }
 
 @layer base {

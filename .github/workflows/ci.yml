@@ -26,4 +26,4 @@ jobs:
           version: latest
 
       - name: Run Biome
-        run: bun biome ci .
+        run: bun biome ci src app

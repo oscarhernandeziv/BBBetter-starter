@@ -1,0 +1,76 @@
+# React Component Architecture Standards
+
+## Description
+Standards and best practices for React component development and shadcn/ui integration in this project.
+
+## Globs
+- `components/**/*`
+- `app/**/*.tsx`
+- `lib/**/*.tsx`
+- `styles/**/*`
+
+## Instructions
+
+### Component Organization
+1. Follow atomic design principles:
+   - Atoms (basic components)
+   - Molecules (composite components)
+   - Organisms (complex components)
+   - Templates (page layouts)
+   - Pages (routes)
+
+### Component Best Practices
+1. Use functional components with hooks
+2. Implement proper prop typing
+3. Use proper component composition
+4. Follow single responsibility principle
+5. Implement proper error boundaries
+
+### shadcn/ui Integration
+1. Follow shadcn/ui component patterns
+2. Use proper component customization
+3. Maintain consistent styling
+4. Implement proper theme integration
+5. Use proper component variants
+
+### State Management
+1. Use proper state management patterns
+2. Implement proper context usage
+3. Use proper prop drilling alternatives
+4. Implement proper form state management
+5. Use proper server state management
+
+### Performance
+1. Implement proper code splitting
+2. Use proper memoization
+3. Optimize re-renders
+4. Use proper lazy loading
+5. Implement proper bundle optimization
+
+### Accessibility
+1. Follow WCAG guidelines
+2. Use proper ARIA attributes
+3. Implement proper keyboard navigation
+4. Use proper color contrast
+5. Implement proper focus management
+
+### Component Testing
+1. Write unit tests for components
+2. Implement proper integration tests
+3. Use proper testing utilities
+4. Test component interactions
+5. Test accessibility features
+
+### Documentation
+1. Document component APIs
+2. Use proper JSDoc comments
+3. Maintain component stories
+4. Document component variants
+5. Maintain proper examples
+
+### Code Quality
+1. Follow DRY principles
+2. Implement proper error handling
+3. Use proper TypeScript features
+4. Maintain consistent naming
+5. Follow code style guidelines 

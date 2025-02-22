@@ -1,0 +1,56 @@
+# Tailwind CSS Development Standards
+
+## Description
+Standards and best practices for styling using Tailwind CSS in this project.
+
+## Globs
+- `**/*.tsx`
+- `**/*.css`
+- `tailwind.config.*`
+
+## Instructions
+
+### Class Organization
+1. Follow consistent class ordering:
+   - Layout (position, display, width, height)
+   - Spacing (margin, padding)
+   - Typography
+   - Visual (colors, backgrounds)
+   - Interactive states
+2. Use meaningful class grouping with @apply for repeated patterns
+3. Maintain readability with line breaks between logical groups
+
+### Component Styling
+1. Use Tailwind's built-in responsive design utilities
+2. Implement dark mode using Tailwind's dark: variant
+3. Use CSS Grid and Flexbox utilities appropriately
+4. Maintain consistent spacing using Tailwind's spacing scale
+5. Use CSS variables for dynamic values
+
+### Custom Configuration
+1. Extend theme consistently in tailwind.config
+2. Define custom utilities only when necessary
+3. Use proper color palette definitions
+4. Maintain consistent breakpoint definitions
+5. Define reusable component classes
+
+### Best Practices
+1. Use shadcn/ui component styling conventions
+2. Implement proper responsive design patterns
+3. Maintain accessibility standards
+4. Use proper container queries where needed
+5. Implement proper animation utilities
+
+### Performance
+1. Use proper purge configuration
+2. Minimize custom CSS
+3. Use @layer directives appropriately
+4. Implement proper CSS variable usage
+5. Optimize for production builds
+
+### Maintainability
+1. Document custom utilities
+2. Use consistent naming conventions
+3. Implement proper component abstractions
+4. Maintain design system consistency
+5. Use proper CSS organization patterns 

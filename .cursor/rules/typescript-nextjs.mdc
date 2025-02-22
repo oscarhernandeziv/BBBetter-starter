@@ -1,0 +1,55 @@
+# TypeScript and Next.js Development Standards
+
+## Description
+This document outlines the standards and best practices for TypeScript and Next.js development in this project.
+
+## Globs
+- `**/*.ts`
+- `**/*.tsx`
+- `app/**/*`
+- `components/**/*`
+
+## Instructions
+
+### TypeScript Standards
+1. Enable strict mode in TypeScript configuration
+2. Use explicit type annotations for function parameters and return types
+3. Avoid using `any` type - use `unknown` for truly unknown types
+4. Utilize TypeScript's built-in utility types where appropriate (e.g., `Partial<T>`, `Pick<T>`)
+5. Use interface for object types that can be extended, type for unions and intersections
+
+### Next.js Standards
+1. Use App Router conventions and patterns
+2. Implement proper error boundaries and loading states
+3. Follow the server/client component patterns:
+   - Default to Server Components
+   - Use 'use client' directive only when necessary
+4. Implement proper metadata for SEO
+5. Use Next.js built-in optimizations:
+   - Image component for images
+   - Font optimization
+   - Route segments for code splitting
+
+### File Organization
+1. Place page components in the `app` directory
+2. Keep reusable components in the `components` directory
+3. Use feature-based folder structure for complex features
+4. Maintain clear separation between UI components and business logic
+
+### Performance
+1. Implement proper caching strategies
+2. Use React Suspense for code splitting
+3. Optimize images and assets
+4. Minimize client-side JavaScript
+
+### Error Handling
+1. Implement proper error boundaries
+2. Use type-safe error handling patterns
+3. Provide meaningful error messages
+4. Log errors appropriately
+
+### State Management
+1. Use React's built-in state management when possible
+2. Implement proper data fetching patterns
+3. Follow Server Actions best practices
+4. Keep state as close to where it's needed as possible

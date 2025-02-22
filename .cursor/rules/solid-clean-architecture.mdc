@@ -1,0 +1,92 @@
+---
+description: Standards and best practices for implementing SOLID principles and Clean Architecture in this project.
+globs: **/*.ts, **/*.tsx, app/**/*, src/**/*, lib/**/*, services/**/*
+---
+# SOLID Principles and Clean Architecture Standards
+
+## Description
+Standards and best practices for implementing SOLID principles and Clean Architecture in this project.
+
+## Globs
+- `**/*.ts`
+- `**/*.tsx`
+- `app/**/*`
+- `src/**/*`
+- `lib/**/*`
+- `services/**/*`
+
+## Instructions
+
+### SOLID Principles
+
+#### Single Responsibility Principle (SRP)
+1. Each class/module should have one reason to change
+2. Separate business logic from UI components
+3. Use composition over inheritance
+4. Keep functions focused and small
+5. Extract complex logic into separate services
+
+#### Open/Closed Principle (OCP)
+1. Design entities to be extended without modification
+2. Use interfaces and abstract classes appropriately
+3. Implement strategy pattern where appropriate
+4. Use dependency injection
+5. Design for extensibility
+
+#### Liskov Substitution Principle (LSP)
+1. Ensure derived classes are substitutable for base classes
+2. Maintain contract consistency in interfaces
+3. Use composition over inheritance when LSP would be violated
+4. Design by contract
+5. Validate inheritance hierarchies
+
+#### Interface Segregation Principle (ISP)
+1. Keep interfaces small and focused
+2. Split large interfaces into smaller ones
+3. Design role-specific interfaces
+4. Avoid interface pollution
+5. Use TypeScript's interface composition
+
+#### Dependency Inversion Principle (DIP)
+1. Depend on abstractions, not concretions
+2. Use dependency injection
+3. Implement IoC containers where appropriate
+4. Define clear module boundaries
+5. Use interface-based design
+
+### Clean Architecture
+
+#### Layer Separation
+1. Maintain clear boundaries between:
+   - Domain Layer (Core business rules)
+   - Application Layer (Use cases)
+   - Interface Layer (Controllers/Presenters)
+   - Infrastructure Layer (Frameworks/Tools)
+
+#### Domain-Driven Design
+1. Define clear domain models
+2. Use value objects appropriately
+3. Implement aggregate roots
+4. Define bounded contexts
+5. Use domain events
+
+#### Use Cases
+1. Implement use case pattern
+2. Keep business rules isolated
+3. Use command/query separation
+4. Implement proper validation
+5. Handle errors appropriately
+
+#### Data Flow
+1. Follow unidirectional data flow
+2. Implement proper state management
+3. Use proper dependency injection
+4. Maintain clear data boundaries
+5. Implement proper error handling
+
+#### Testing
+1. Write unit tests for domain logic
+2. Implement integration tests
+3. Use proper mocking strategies
+4. Follow TDD where appropriate
+5. Maintain test independence

@@ -1,6 +1,12 @@
 import { Button } from "@/app/_components/ui/button";
 import { Github, Terminal } from "lucide-react";
 import Link from "next/link";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "./_components/ui/card";
 
 export default function Home() {
 	return (
@@ -55,14 +61,14 @@ export default function Home() {
 						<div className="flex gap-4">
 							<Button
 								asChild
-								className="h-10 bg-green-500 px-8 font-bold text-black text-sm transition-colors hover:bg-green-400"
+								className="h-10 bg-green-500 px-8 text-black text-sm transition-colors hover:bg-green-400"
 							>
 								<Link href="#docs">Get Started</Link>
 							</Button>
 							<Button
 								asChild
 								variant="outline"
-								className="h-10 border border-white/20 px-8 font-bold text-sm transition-colors hover:bg-white/10"
+								className="h-10 border border-white/20 px-8 text-sm transition-colors hover:bg-white/10"
 							>
 								<Link href="https://github.com">View on GitHub</Link>
 							</Button>
@@ -102,26 +108,38 @@ export default function Home() {
 				</div>
 
 				<div className="mt-24 grid gap-8 md:grid-cols-3">
-					<div className="space-y-2">
-						<h3 className="font-semibold text-lg">Ultra-Modern Stack</h3>
-						<p className="text-muted-foreground text-sm">
-							Next.js 15, React 19, and Tailwind v4 are the latest and greatest
-							for 2025.
-						</p>
-					</div>
-					<div className="space-y-2">
-						<h3 className="font-semibold text-lg">Ultra-Fast Tooling</h3>
-						<p className="text-muted-foreground text-sm">
-							Bun and Biome make for speedy DX and even speedier build times.
-						</p>
-					</div>
-					<div className="space-y-2">
-						<h3 className="font-semibold text-lg">Ultra-Clean Codebase</h3>
-						<p className="text-muted-foreground text-sm">
-							Better Auth, shadcn/ui, and more provide clean and comprehensible
-							code.
-						</p>
-					</div>
+					<Card className="space-y-2">
+						<CardHeader>
+							<CardTitle className="text-lg">Ultra-Modern Stack</CardTitle>
+						</CardHeader>
+						<CardContent>
+							<p className="text-muted-foreground text-sm">
+								Next.js 15, React 19, and Tailwind v4 are the latest and
+								greatest for 2025.
+							</p>
+						</CardContent>
+					</Card>
+					<Card className="space-y-2">
+						<CardHeader>
+							<CardTitle className="text-lg">Ultra-Fast Tooling</CardTitle>
+						</CardHeader>
+						<CardContent>
+							<p className="text-muted-foreground text-sm">
+								Bun and Biome make for speedy DX and even speedier build times.
+							</p>
+						</CardContent>
+					</Card>
+					<Card className="space-y-2">
+						<CardHeader>
+							<CardTitle className="text-lg">Ultra-Clean Codebase</CardTitle>
+						</CardHeader>
+						<CardContent>
+							<p className="text-muted-foreground text-sm">
+								Better Auth, shadcn/ui, and more provide clean and
+								comprehensible code.
+							</p>
+						</CardContent>
+					</Card>
 				</div>
 			</main>
 

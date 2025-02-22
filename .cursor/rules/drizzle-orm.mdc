@@ -1,0 +1,57 @@
+---
+description: Standards and best practices for database operations using Drizzle ORM in this project.
+globs: drizzle/**/*, **/schema.ts, **/migrations/*
+---
+# Drizzle ORM Development Standards
+
+## Description
+Standards and best practices for database operations using Drizzle ORM in this project.
+
+## Globs
+- `drizzle/**/*`
+- `**/schema.ts`
+- `**/migrations/*`
+
+## Instructions
+
+### Schema Design
+1. Use appropriate column types for data
+2. Implement proper relationships between tables
+3. Define meaningful constraints and indexes
+4. Use meaningful and consistent naming conventions
+5. Document schema changes properly
+
+### Migration Practices
+1. Create migrations for all schema changes
+2. Never modify existing migrations
+3. Test migrations both up and down
+4. Keep migrations atomic and focused
+5. Include meaningful descriptions in migration names
+
+### Query Patterns
+1. Use type-safe queries with Drizzle's query builder
+2. Implement proper transaction handling
+3. Use prepared statements for parameterized queries
+4. Optimize queries for performance
+5. Handle errors appropriately
+
+### Data Access Layer
+1. Implement repository pattern for data access
+2. Keep database logic separate from business logic
+3. Use meaningful method names for database operations
+4. Implement proper connection pooling
+5. Handle database connections properly
+
+### Security
+1. Sanitize all user inputs
+2. Use parameterized queries to prevent SQL injection
+3. Implement proper access controls
+4. Handle sensitive data appropriately
+5. Follow security best practices for database operations
+
+### Performance
+1. Use appropriate indexes
+2. Optimize query patterns
+3. Implement proper caching strategies
+4. Monitor query performance
+5. Use batch operations where appropriate

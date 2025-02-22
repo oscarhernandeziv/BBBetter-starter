@@ -4,16 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@font-face {
-	font-family: "Server Mono";
-	src: url("../public/fonts/ServerMono-Regular.woff2") format("woff2");
-}
-
-@font-face {
-	font-family: "Server Mono Italic";
-	src: url("../public/fonts/ServerMono-Regular-Italic.woff2") format("woff2");
-}
-
 :root {
 	--background: hsl(0 0% 100%);
 	--foreground: hsl(0 0% 3.9%);
